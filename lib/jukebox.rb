@@ -24,7 +24,8 @@ end
 end
  
  def play(song)
-  puts 
+  puts "Please enter a song name or number:"
+  song_selec = gets.strip
 end
  
  def help
