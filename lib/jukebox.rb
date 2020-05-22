@@ -39,10 +39,30 @@ end
   puts "Goodbye"
 end
  
-def run 
+def run(songs) 
   puts "Please enter a command:"
   user_choice = gets.strip
-  if 
+  while user_choice != "exit"
+    if user_choice == "help"
+      help 
+       puts "Please enter a command:"
+  user_choice = gets.strip
+    elsif user_choice == "play"
+      play(songs)
+ puts "Please enter a command:"
+  user_choice = gets.strip
+    elsif user_choice == "list"
+      list(songs)
+      puts "Please enter a command:"
+ puts "Please enter a command:"
+  user_choice = gets.strip
+    else 
+      puts "Invalid input, please try again"
+      puts "Please enter a command:"
+      user_choice = gets.strip
+    end 
+  end 
+  exit_jukebox
   
 end 
 
