@@ -25,8 +25,13 @@ end
  
  def play(song)
   puts "Please enter a song name or number:"
-  song_selec = gets.strip
-  song.each_with_index{ |val,index| puts "#{index + 1}. #{val}"}
+  song_selec = gets.strip - 1
+  song.each_with_index do  |val,index| 
+    if song_selec == index
+      puts val[index]
+    else 
+    puts "#{index + 1}. #{val}"
+  end
 end
  
  def exit_jukebox
