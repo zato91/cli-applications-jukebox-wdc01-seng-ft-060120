@@ -22,7 +22,7 @@ puts "- exit : exits this program"
 end
  
  def list(songs)
-  song.each_with_index { |val,index| puts "#{index + 1}. #{val}"}
+  songs.each_with_index { |val,index| puts "#{index + 1}. #{val}"}
 end
  
  def play(songs)
