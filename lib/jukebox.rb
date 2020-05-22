@@ -32,14 +32,13 @@ end
  
  
   songs.each_with_index do  |val,index| 
-    if song_number == (index + 1)
+    if song_number == (index + 1) || song_name == val
       puts "Playing #{val}"
-      elsif if  song_name == val
-       puts "Playing #{val}"
     else 
       puts "Invalid input, please try again"
     end
   end
+  
 end
  
  def exit_jukebox
