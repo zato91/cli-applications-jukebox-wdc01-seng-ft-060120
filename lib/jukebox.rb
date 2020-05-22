@@ -23,7 +23,7 @@ end
   song.each_with_index { |val,index| puts "#{index + 1}. #{val}"}
 end
  
- def play(song)
+ def play(songs)
   puts "Please enter a song name or number:"
   song_selec = gets.strip - 1
   song.each_with_index do  |val,index| 
@@ -40,7 +40,9 @@ end
 end
  
 def run 
-  
+  puts "Please enter a command:"
+  user_choice = gets.strip
+  if 
   
 end 
 
