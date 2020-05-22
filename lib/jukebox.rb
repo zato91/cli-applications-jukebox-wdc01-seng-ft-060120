@@ -28,7 +28,7 @@ end
   song_selec = gets.strip
 end
  
- def help
+ def exit_jukebox
   "Hi #{name}!"
 end
  
