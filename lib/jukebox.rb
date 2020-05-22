@@ -30,7 +30,8 @@ end
     if song_selec == index
       puts val[index]
     else 
-    puts "#{index + 1}. #{val}"
+      puts "Invalid input, please try again"
+    end
   end
 end
  
@@ -38,4 +39,6 @@ end
   puts "Goodbye"
 end
  
+def run 
+end 
 
