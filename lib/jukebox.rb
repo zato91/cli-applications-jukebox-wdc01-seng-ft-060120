@@ -30,7 +30,7 @@ end
   song_selec = gets.strip 
  song_selec = song_selec.to_i 
   songs.each_with_index do  |val,index| 
-    if (song_selec - 1 ) == index
+    if song_selec  == (index + 1)
       puts val[index]
     else 
       puts "Invalid input, please try again"
