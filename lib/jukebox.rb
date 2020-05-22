@@ -19,12 +19,12 @@ puts"- play : lets you choose a song to play"
 puts"- exit : exits this program"
 end
  
- def help(song)
-  song.each_with
+ def help(songs)
+  song.each_with_index { |val,index| puts "#{index + 1}. #{val}"}
 end
  
- def help
-  "Hi #{name}!"
+ def play(song)
+  puts 
 end
  
  def help
