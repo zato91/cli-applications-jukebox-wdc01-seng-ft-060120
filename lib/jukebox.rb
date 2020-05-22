@@ -34,8 +34,10 @@ end
   songs.each_with_index do  |val,index| 
     if song_number == (index + 1) or song_name == val
       puts "Playing #{val}"
+      break
     else 
       puts "Invalid input, please try again"
+      break 
     end
   end
   
