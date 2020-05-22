@@ -15,4 +15,16 @@ def help
   "Hi #{name}!"
 end
  
+ def help
+  "Hi #{name}!"
+end
+ 
+ def help
+  "Hi #{name}!"
+end
+ 
+ def help
+  "Hi #{name}!"
+end
+ 
 
