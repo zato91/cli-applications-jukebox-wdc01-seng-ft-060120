@@ -32,7 +32,7 @@ end
  
  
   songs.each_with_index do  |val,index| 
-    if song_number == (index + 1) or song_name == val
+    if (song_number -1 )==  index  or song_name == val
       puts "Playing #{val}"
       break
     else 
